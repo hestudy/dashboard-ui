@@ -12,4 +12,7 @@ export default {
   npm: {
     publish: true,
   },
+  hooks: {
+    "after:npm:bump": "npm run build",
+  },
 } satisfies Config;
